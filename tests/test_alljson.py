@@ -118,11 +118,11 @@ def test_pathlib_path():
 
 
 def test_nested():
-    v = {
+    v = (x for x in (
         datetime.datetime(2018, 1, 28, 17, 13, 15),
-        frozenset({1}),
-    }
+        Decimal('15.01'),
+    ))
     assert j(v) == [
         '2018-01-28T17:13:15',
-        [1],
+        '15.01',
     ]
