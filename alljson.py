@@ -41,6 +41,7 @@ json._default_encoder = CustomizableEncoder(
     separators=None,
     default=None
 )
+json.JSONEncoder = CustomizableEncoder
 
 
 def register_encoder(klass, func):

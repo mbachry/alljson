@@ -49,7 +49,7 @@ class install(_install):
 
 setup(
     name='alljson',
-    version='0.1',
+    version='0.2',
     description='Make any type JSON-serializable',
     long_description=readme,
     author='Marcin Bachry',
